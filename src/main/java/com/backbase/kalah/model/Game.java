@@ -1,7 +1,11 @@
 package com.backbase.kalah.model;
 
 import java.util.UUID;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class Game {
 
     private final String id;
@@ -14,27 +18,4 @@ public class Game {
         this.board = new Board();
     }
 
-    public Board getBoard() {
-        return this.board;
-    }
-
-    public String getId() {
-        return this.id;
-    }
-
-    public Player getTurn() {
-        return this.turn;
-    }
-
-    public void setTurn(final Player turn) {
-        this.turn = turn;
-    }
-
-    public Player getWinner() {
-        return this.winner;
-    }
-
-    public void setWinner(final Player winner) {
-        this.winner = winner;
-    }
 }

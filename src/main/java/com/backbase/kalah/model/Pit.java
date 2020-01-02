@@ -2,7 +2,11 @@ package com.backbase.kalah.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class Pit {
 
     private final int id;
@@ -16,24 +20,12 @@ public class Pit {
         }
     }
 
-    public int getId() {
-        return this.id;
-    }
-
     public Player getOwner() {
         if (this.getId() <= Player.PLAYER_NORTH.getHouseIndex()) {
             return Player.PLAYER_NORTH;
         } else {
             return Player.PLAYER_SOUTH;
         }
-    }
-
-    public int getStoneCount() {
-        return this.stoneCount;
-    }
-
-    public void setStoneCount(final int stoneCount) {
-        this.stoneCount = stoneCount;
     }
 
     public boolean isDistributable(final Player turn) {

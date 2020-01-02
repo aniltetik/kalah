@@ -1,8 +1,11 @@
 package com.backbase.kalah.model;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class Board {
 
     public static final int START_INDEX = 1;
@@ -19,10 +22,6 @@ public class Board {
 
     public Pit getPit(final int index) {
         return this.pits.get((index - 1) % Board.END_INDEX);
-    }
-
-    public List<Pit> getPits() {
-        return this.pits;
     }
 
     public int getStoneCount(final Player player, final boolean includeHouse) {
