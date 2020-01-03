@@ -1,6 +1,6 @@
 package com.backbase.kalah.repository;
 
-import info.aydinoglu.baris.kalah.model.Game;
+import com.backbase.kalah.model.Game;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

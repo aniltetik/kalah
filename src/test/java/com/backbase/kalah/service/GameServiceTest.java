@@ -1,8 +1,8 @@
 package com.backbase.kalah.service;
 
-import info.aydinoglu.baris.kalah.model.Game;
-import info.aydinoglu.baris.kalah.model.Player;
-import info.aydinoglu.baris.kalah.model.exception.IllegalMoveException;
+import com.backbase.kalah.model.Game;
+import com.backbase.kalah.model.Player;
+import com.backbase.kalah.model.exception.IllegalMoveException;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

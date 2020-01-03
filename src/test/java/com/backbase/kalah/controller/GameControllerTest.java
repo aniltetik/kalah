@@ -1,7 +1,7 @@
 package com.backbase.kalah.controller;
 
-import info.aydinoglu.baris.kalah.model.Game;
-import info.aydinoglu.baris.kalah.service.GameService;
+import com.backbase.kalah.model.Game;
+import com.backbase.kalah.service.GameService;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 import org.junit.runner.RunWith;

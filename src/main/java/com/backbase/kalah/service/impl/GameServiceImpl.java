@@ -1,4 +1,4 @@
-package com.backbase.kalah.service;
+package com.backbase.kalah.service.impl;
 
 
 import com.backbase.kalah.model.Board;
@@ -7,6 +7,7 @@ import com.backbase.kalah.model.Pit;
 import com.backbase.kalah.model.Player;
 import com.backbase.kalah.model.exception.IllegalMoveException;
 import com.backbase.kalah.repository.GameRepository;
+import com.backbase.kalah.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -83,7 +84,7 @@ public class GameServiceImpl implements GameService {
         final Pit endPit = game.getBoard().getPit(endPitId);
         if (!endPit.isHouse() && endPit.getOwner().equals(game.getTurn())
             && (endPit.getStoneCount() == 1)) {
-            final Pit oppositePit = game.getBoard().getPit(Board.PIT_END_INDEX - endPit.getId());
+            final Pit oppositePit = game.getBoard().getPit(Board.END_INDEX - endPit.getId());
             if (oppositePit.getStoneCount() > 0) {
                 final Pit house = game.getBoard().getPit(endPit.getOwner().getHouseIndex());
                 house.setStoneCount(

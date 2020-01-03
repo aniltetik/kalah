@@ -24,7 +24,7 @@ public class BoardTest {
     final Board givenBoard = new Board();
 
     Assert.assertNotNull(givenBoard.getPits());
-    Assert.assertEquals(Board.PIT_END_INDEX, givenBoard.getPits().size());
+    Assert.assertEquals(Board.END_INDEX, givenBoard.getPits().size());
   }
 
   @Test

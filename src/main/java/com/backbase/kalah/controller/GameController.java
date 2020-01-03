@@ -1,9 +1,9 @@
 package com.backbase.kalah.controller;
 
-import info.aydinoglu.baris.kalah.model.Game;
-import info.aydinoglu.baris.kalah.model.Pit;
-import info.aydinoglu.baris.kalah.model.dto.GameResponse;
-import info.aydinoglu.baris.kalah.service.GameService;
+import com.backbase.kalah.model.Game;
+import com.backbase.kalah.model.Pit;
+import com.backbase.kalah.model.dto.GameResponse;
+import com.backbase.kalah.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;

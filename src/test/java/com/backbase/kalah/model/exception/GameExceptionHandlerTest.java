@@ -1,8 +1,8 @@
 package com.backbase.kalah.model.exception;
 
+import com.backbase.kalah.model.Game;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import info.aydinoglu.baris.kalah.model.Game;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

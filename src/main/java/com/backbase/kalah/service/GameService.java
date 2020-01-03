@@ -1,6 +1,7 @@
 package com.backbase.kalah.service;
 
-import info.aydinoglu.baris.kalah.model.Game;
+
+import com.backbase.kalah.model.Game;
 
 public interface GameService {
 
