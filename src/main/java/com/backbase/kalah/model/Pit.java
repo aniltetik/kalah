@@ -15,7 +15,6 @@ public class Pit {
             this.setStoneCount(6);
         }
     }
-
     public int getId() {
         return this.id;
     }
